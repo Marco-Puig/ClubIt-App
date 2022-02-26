@@ -1,6 +1,6 @@
 # ClubIt! App for IOS/Android
  
-A new community app made for quality education for school, after school, and with your favorite communities!
+A new community app made for quality education for school, after school, with your favorite communities!
 
 Have all of your clubs, chats, and events all in one application!
 
