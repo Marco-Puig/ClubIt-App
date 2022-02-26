@@ -1,16 +1,18 @@
-# clubitapp
+# ClubIt! App for IOS/Android
+ 
+A new community app made for quality education for school, after school, and with your favorite communities!
 
-A new Flutter project.
+Have all of your clubs, chats, and events all in one application!
 
-## Getting Started
+## Design and Overview
 
-This project is a starting point for a Flutter application.
+![ic_launcher](https://user-images.githubusercontent.com/90495366/155856225-57277156-dd71-4018-8440-02fc7f4b104f.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Getting Started with Flutter
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+This project is being made with the Flutter SDK.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+A few resources to get you started with Flutter:
+
+- [Setup Flutter](https://docs.flutter.dev/get-started)
+- [Flutter Documentation](https://docs.flutter.dev/)
