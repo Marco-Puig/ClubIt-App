@@ -2,6 +2,7 @@ import 'package:clubitapp/screens/signup/signup.dart';
 import 'package:clubitapp/screens/home/home.dart';
 import 'package:clubitapp/states/currentUser.dart';
 import 'package:clubitapp/widgets/ourContainer.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -30,6 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   firebase_auth:
+  firebase_core:
   provider:
 
 

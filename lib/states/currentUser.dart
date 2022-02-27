@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 class CurrentUser extends ChangeNotifier {
   late String _uid;
   late String _email;
+  late String _pass;
 
   String get getUid => _uid;
 
@@ -19,7 +20,6 @@ class CurrentUser extends ChangeNotifier {
           email: email, password: password);
 
       if (_authResult.user != null) {
-        // _uid = _authResult.user.uid;
         retVal = true;
       }
     } catch (e) {
@@ -33,12 +33,12 @@ class CurrentUser extends ChangeNotifier {
     bool retVal = false;
 
     try {
-      UserCredential _authResult = await _auth.createUserWithEmailAndPassword(
+      UserCredential _authResult = await _auth.signInWithEmailAndPassword(
           email: email, password: password);
 
       if (_authResult.user != null) {
-        // _uid = _authResult.user.uid;
-        // _email = _authResult.user.email;
+        _email = email;
+        _pass = password;
         retVal = true;
       }
     } catch (e) {
