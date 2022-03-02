@@ -20,7 +20,7 @@ Create/Join Clubs - (WIP)
 
 Notifications - (WIP)
 
-Chatting System (Usernames, Groupchats) - (WIP)
+Chatting System (Clubchats) - (WIP)
 
 Explore Clubs - (If qualified for Top 50 or as a post-release feature)
 
