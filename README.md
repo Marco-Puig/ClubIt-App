@@ -4,9 +4,25 @@ A new community app made for quality education for school, after school, with yo
 
 Have all of your clubs, chats, and events all in one application!
 
+This app is being developed as a submission for the Google Solution Challenge 2022.
+
 ## Design and Overview
 
 ![ic_launcher](https://user-images.githubusercontent.com/90495366/155856225-57277156-dd71-4018-8440-02fc7f4b104f.png)
+
+## Features and Roadmap
+
+Design and planning - (Done)
+
+Login/Sign-up using Firebase - (Done)
+
+Create/Join Clubs - (WIP)
+
+Notifications - (WIP)
+
+Chatting System (Usernames, Groupchats) - (WIP)
+
+Explore Clubs - (If qualified for Top 50 or as a post-release feature)
 
 ## Getting Started with Flutter
 
