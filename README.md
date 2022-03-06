@@ -22,7 +22,9 @@ Notifications - (WIP)
 
 Chatting System (Clubchats) - (WIP)
 
-Explore Clubs and Additional Providers for Logging-in (Google, Apple, Etc) - (If qualified for Top 50 or as a post-release feature)
+Explore Clubs - (If qualified for Top 50 or as a post-release feature)
+
+Additional Providers for Logging-in (Google, Apple, Etc) - (If qualified for Top 50 or as a post-release feature)
 
 ## Getting Started with Flutter
 
