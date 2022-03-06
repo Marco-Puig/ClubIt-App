@@ -18,8 +18,17 @@ class _OurSignUpFormState extends State<OurSignUpForm> {
     CurrentUser _currentUser = Provider.of<CurrentUser>(context, listen: false);
 
     try {
-      if (await _currentUser.signUpUser(email, password)) {
+      String _returnString = await _currentUser.signUpUser(email, password);
+      if (_returnString == 'success') {
         Navigator.pop(context);
+      } else {
+        Scaffold.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+                "Make sure you use a valid email and a six character length password!"),
+            duration: Duration(seconds: 2),
+          ),
+        );
       }
     } catch (e) {
       print(e);

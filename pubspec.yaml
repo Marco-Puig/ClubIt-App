@@ -32,6 +32,7 @@ dependencies:
   firebase_auth:
   firebase_core:
   provider:
+  google_sign_in:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -63,7 +64,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/clubit-logo-t.png
-
+    - assets/google-logo.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

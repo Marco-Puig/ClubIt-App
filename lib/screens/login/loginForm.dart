@@ -5,6 +5,12 @@ import 'package:clubitapp/widgets/ourContainer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
+enum LoginType {
+  email,
+  google,
+}
 
 class OurLoginForm extends StatefulWidget {
   @override
@@ -12,13 +18,18 @@ class OurLoginForm extends StatefulWidget {
 }
 
 class _OurLoginFormState extends State<OurLoginForm> {
+  bool _isLoggedInWithGoogle = false;
+  GoogleSignIn _googleSignIn = GoogleSignIn();
+
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
   void _loginUser(String email, String password, BuildContext context) async {
     CurrentUser _currentUser = Provider.of<CurrentUser>(context, listen: false);
     try {
-      if (await _currentUser.loginUser(email, password)) {
+      String _returnString =
+          await _currentUser.loginUserWithEmail(email, password);
+      if (_returnString == 'success') {
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => HomeScreen()));
       } else {
@@ -68,7 +79,7 @@ class _OurLoginFormState extends State<OurLoginForm> {
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 100.0),
               child: Text(
-                "Login In",
+                "Log In",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -80,6 +91,23 @@ class _OurLoginFormState extends State<OurLoginForm> {
               _loginUser(
                   _emailController.text, _passwordController.text, context);
             },
+          ),
+          Center(
+            child: ElevatedButton(
+              child: Padding(
+                padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 73.0),
+                child: Text("Login with Google"),
+              ),
+              onPressed: () {
+                _googleSignIn.signIn().then((userData) {
+                  setState(() {
+                    _isLoggedInWithGoogle = true; //placeholder bool
+                  });
+                }).catchError((e) {
+                  print(e);
+                });
+              },
+            ),
           ),
           FlatButton(
             child: Text("Are you a new user? Sign up here."),
