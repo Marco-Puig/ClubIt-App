@@ -112,7 +112,7 @@ class _OurSignUpFormState extends State<OurSignUpForm> {
               } else {
                 Scaffold.of(context).showSnackBar(
                   SnackBar(
-                    content: Text("Passwords do not match"),
+                    content: Text("Passwords do not match!"),
                     duration: Duration(seconds: 2),
                   ),
                 );
