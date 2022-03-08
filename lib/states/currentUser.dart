@@ -1,3 +1,4 @@
+import 'package:clubitapp/models/firebase.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -37,7 +38,7 @@ class CurrentUser extends ChangeNotifier {
           email: email, password: password);
       {
         _email = email;
-        _pass = password;
+        //_pass = password;
         retVal = "success";
       }
     } catch (e) {

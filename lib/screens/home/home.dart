@@ -28,6 +28,28 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
+                    "Google Developer Club",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5.0),
+                    child: Row(
+                      children: <Widget>[],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: OurContainer(
+              child: Column(
+                children: <Widget>[
+                  Text(
                     "Android Study Jam - Week 1",
                     style: TextStyle(
                       fontSize: 30,
@@ -76,7 +98,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
-                    "Chat: \n\n\n\n\n\n\n",
+                    "Chat: \n\n\n\n\n\n\n\n\n\n",
                     style: TextStyle(
                       fontSize: 30,
                       color: Colors.grey[600],
