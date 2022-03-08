@@ -8,3 +8,11 @@ Future<void> userSetup(String displayName) async {
   users.add({'displayName': displayName, 'uid': uid});
   return;
 }
+
+Future<void> clubSetup(String clubID) async {
+  CollectionReference users = FirebaseFirestore.instance.collection('Clubs');
+  FirebaseAuth auth = FirebaseAuth.instance;
+  String uid = auth.currentUser!.uid.toString();
+  users.add({'Club ID': clubID, 'uid': uid});
+  return;
+}
