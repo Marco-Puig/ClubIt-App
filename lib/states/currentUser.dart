@@ -1,4 +1,4 @@
-import 'package:clubitapp/models/firebase.dart';
+import 'package:clubitapp/models/user.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 

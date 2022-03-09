@@ -1,10 +1,28 @@
 import 'package:flutter/material.dart';
+import '../createGroup/createGroup.dart';
+import '../joinGroup/joinGroup.dart';
 
 class OurNoGroup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    void _goToJoin() {}
-    void _goToCreate() {}
+    void _goToJoin(BuildContext context) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OurJoinGroup(),
+        ),
+      );
+    }
+
+    void _goToCreate(BuildContext context) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => OurCreateGroup(),
+        ),
+      );
+    }
+
     return Scaffold(
       body: Column(
         children: <Widget>[
@@ -42,7 +60,7 @@ class OurNoGroup extends StatelessWidget {
               children: <Widget>[
                 RaisedButton(
                   child: Text("Join", style: TextStyle(color: Colors.white)),
-                  onPressed: () => _goToJoin(),
+                  onPressed: () => _goToJoin(context),
                   color: Color.fromARGB(255, 0, 0, 0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20.0),
@@ -57,7 +75,7 @@ class OurNoGroup extends StatelessWidget {
           ),
           RaisedButton(
             child: Text("Create"),
-            onPressed: () => _goToCreate(),
+            onPressed: () => _goToCreate(context),
             color: Theme.of(context).canvasColor,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),

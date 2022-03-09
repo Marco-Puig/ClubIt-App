@@ -1,4 +1,4 @@
-import 'package:clubitapp/models/firebase.dart';
+import 'package:clubitapp/models/user.dart';
 import 'package:clubitapp/states/currentUser.dart';
 import 'package:clubitapp/widgets/ourContainer.dart';
 import 'package:flutter/material.dart';
@@ -110,7 +110,7 @@ class _OurSignUpFormState extends State<OurSignUpForm> {
               if (_passwordController.text == _confirmPasswordController.text) {
                 _signUpUser(
                     _emailController.text, _passwordController.text, context);
-                userSetup(_fullNameController.text);
+                userSetup(_fullNameController.text, _fullNameController.text);
               } else {
                 Scaffold.of(context).showSnackBar(
                   SnackBar(

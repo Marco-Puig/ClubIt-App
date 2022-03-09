@@ -1,5 +1,5 @@
+import 'package:clubitapp/screens/noGroup/noGroup.dart';
 import 'package:clubitapp/screens/signup/signup.dart';
-import 'package:clubitapp/screens/home/home.dart';
 import 'package:clubitapp/states/currentUser.dart';
 import 'package:clubitapp/widgets/ourContainer.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -31,7 +31,7 @@ class _OurLoginFormState extends State<OurLoginForm> {
           await _currentUser.loginUserWithEmail(email, password);
       if (_returnString == 'success') {
         Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => HomeScreen()));
+            .push(MaterialPageRoute(builder: (context) => OurNoGroup()));
       } else {
         Scaffold.of(context).showSnackBar(SnackBar(
           content: Text("Incorrect Email/Password!"),
