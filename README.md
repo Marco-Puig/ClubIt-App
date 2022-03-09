@@ -18,6 +18,8 @@ Login/Sign-up using Firebase - (Done)
 
 Create/Join Clubs - (Done)
 
+Club back-end (Club profiles) - (WIP)
+
 Notifications - (WIP)
 
 Chatting System (Clubchats) - (WIP)
