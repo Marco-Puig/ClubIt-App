@@ -16,7 +16,7 @@ Design and planning - (Done)
 
 Login/Sign-up using Firebase - (Done)
 
-Create/Join Clubs - (WIP)
+Create/Join Clubs - (Done)
 
 Notifications - (WIP)
 
