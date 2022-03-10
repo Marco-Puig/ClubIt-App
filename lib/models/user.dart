@@ -13,8 +13,6 @@ Future<void> userSetup(String displayName, String groupId) async {
 
 /*create function to display group code in the club screen,
 events, name, and when you join a club - recieve a notfication of the event.
-
-
 */
 
 Future<void> groupSetup(BuildContext context, String groupId) async {
@@ -27,8 +25,11 @@ Future<void> groupSetup(BuildContext context, String groupId) async {
         builder: (context) => OurRoot(),
       ),
       (route) => false);
-  CollectionReference users = FirebaseFirestore.instance.collection('Users');
-  users.add({'groupId': groupId});
+  CollectionReference groups = FirebaseFirestore.instance.collection('Groups');
+  groups.add({'groupId': groupId, 'uid': uid});
+  await _firestore.collection("Users").doc(uid).set({
+    'groupId': groupId,
+  });
   return;
 }
 
@@ -38,9 +39,9 @@ Future<void> groupJoin(
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   String uid = auth.currentUser!.uid.toString();
   userUid = uid;
-  await _firestore.collection("Users").doc(userUid).update({
-    'groupId': groupId, //if update doesn't work, then set (maybe!).
-  }); //set will work in the meantime but it needs to only be temporary!
+  await _firestore.collection("Users").doc(userUid).set({
+    'groupId': groupId,
+  });
   Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(

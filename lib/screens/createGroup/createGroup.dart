@@ -37,7 +37,6 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
               children: <Widget>[BackButton()],
             ),
           ),
-          Spacer(),
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: OurContainer(
@@ -51,22 +50,8 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
                     ),
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 5.0,
                   ),
-                  RaisedButton(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 100),
-                        child: Text(
-                          "Create",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
-                          ),
-                        ),
-                      ),
-                      onPressed: () =>
-                          groupSetup(context, _groupNameController.text)),
                 ],
               ),
             ),
@@ -84,26 +69,63 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
                     ),
                   ),
                   SizedBox(
-                    height: 20.0,
+                    height: 5.0,
                   ),
-                  RaisedButton(
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 100),
-                        child: Text(
-                          "Save",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
-                          ),
-                        ),
-                      ),
-                      onPressed: () => descriptionSetup(_infoController.text)),
                 ],
               ),
             ),
           ),
-          Spacer(),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: OurContainer(
+              child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    controller: _infoController,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.group),
+                      hintText: "Event",
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: OurContainer(
+              child: Column(
+                children: <Widget>[
+                  TextFormField(
+                    controller: _infoController,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.group),
+                      hintText: "Event Due Time",
+                    ),
+                  ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
+                ],
+              ),
+            ),
+          ),
+          RaisedButton(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 100),
+                child: Text(
+                  "Create",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
+              onPressed: () => groupSetup(context, _groupNameController.text)),
         ],
       ),
     );
