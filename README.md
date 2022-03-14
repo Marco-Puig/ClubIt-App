@@ -4,7 +4,7 @@ A new community app made for quality education for school, after school, with yo
 
 Have all of your clubs, chats, and events all in one application!
 
-This app is being developed as a submission for the Google Solution Challenge 2022.
+This app is being developed as a submission for the Google Solution Challenge 2022 using Flutter, Firebase, and Stream.
 
 ## Design and Overview
 
@@ -18,11 +18,9 @@ Login/Sign-up using Firebase - (Done)
 
 Create/Join Clubs - (Done)
 
-Club back-end (Club profiles) - (WIP)
+Chatting System (Clubchats) - (WIP)
 
 Notifications - (WIP)
-
-Chatting System (Clubchats) - (WIP)
 
 Explore Clubs - (If qualified for Top 50 or as a post-release feature)
 
