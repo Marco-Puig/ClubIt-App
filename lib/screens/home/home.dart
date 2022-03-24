@@ -3,6 +3,7 @@ import 'package:clubitapp/states/currentUser.dart';
 import 'package:clubitapp/widgets/ourContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:clubitapp/screens/chat/chat.dart';
 
 class HomeScreen extends StatelessWidget {
   void _goToNoGroup(BuildContext context) {
@@ -50,6 +51,28 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: <Widget>[
                   Text(
+                    "Welcome to the Club!",
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5.0),
+                    child: Row(
+                      children: <Widget>[],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: OurContainer(
+              child: Column(
+                children: <Widget>[
+                  Text(
                     "Android Study Jam - Week 1",
                     style: TextStyle(
                       fontSize: 30,
@@ -57,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 20.0),
+                    padding: const EdgeInsets.symmetric(vertical: 30.0),
                     child: Row(
                       children: <Widget>[
                         Text(
@@ -86,26 +109,10 @@ class HomeScreen extends StatelessWidget {
                 const EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
             child: RaisedButton(
               child: Text(
-                "Previous Events",
+                "Chat",
                 style: TextStyle(color: Colors.white),
               ),
-              onPressed: () => _goToNoGroup(context),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: OurContainer(
-              child: Column(
-                children: <Widget>[
-                  Text(
-                    "Chat: \n\n\n\n\n\n\n\n\n\n",
-                    style: TextStyle(
-                      fontSize: 30,
-                      color: Colors.grey[600],
-                    ),
-                  ),
-                ],
-              ),
+              onPressed: () => chatCall(),
             ),
           ),
           Padding(
