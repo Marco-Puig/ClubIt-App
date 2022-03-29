@@ -1,4 +1,4 @@
-# ClubIt! App for IOS/Android
+# ClubIt! A Student Clubs Management App for Android
  
 A new community app made for quality education for school, after school, with your favorite communities!
 
