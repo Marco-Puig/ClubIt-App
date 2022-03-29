@@ -17,7 +17,9 @@ Design and planning - (Done)
 
 Login/Sign-up using Firebase - (Done)
 
-Create/Join Clubs - (Done)
+Create/Join Clubs UI - (Done)
+
+Firestore User/Club Data - (Done)
 
 Chatting System (ClubChats) - (Done)
 
