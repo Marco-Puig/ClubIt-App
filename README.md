@@ -19,7 +19,7 @@ Login/Sign-up using Firebase - (Done)
 
 Create/Join Clubs - (Done)
 
-Chatting System (Clubchats) - (Done)
+Chatting System (ClubChats) - (Done)
 
 Explore Clubs - (If qualified for Top 50 or as a post-release feature)
 
