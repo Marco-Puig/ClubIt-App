@@ -1,4 +1,4 @@
-# ClubIt! App for IOS/Android
+# ClubIt! A Student Clubs Management App for Android
  
 A new community app made for quality education for school, after school, with your favorite communities!
 
@@ -7,8 +7,9 @@ Have all of your clubs, chats, and events all in one application!
 This app is being developed as a submission for the Google Solution Challenge 2022 using Flutter, Firebase, and Stream.
 
 ## Design and Overview
+![Untitled](https://user-images.githubusercontent.com/90495366/160708592-13f7a5cf-1546-4663-b14d-382593047d30.png)
 
-![ic_launcher](https://user-images.githubusercontent.com/90495366/155856225-57277156-dd71-4018-8440-02fc7f4b104f.png)
+
 
 ## Features and Roadmap
 
@@ -16,9 +17,11 @@ Design and planning - (Done)
 
 Login/Sign-up using Firebase - (Done)
 
-Create/Join Clubs - (Done)
+Create/Join Clubs UI - (Done)
 
-Chatting System (Clubchats) - (Done)
+Firestore User/Club Data - (Done)
+
+Chatting System (ClubChats) - (Done)
 
 Explore Clubs - (If qualified for Top 50 or as a post-release feature)
 
