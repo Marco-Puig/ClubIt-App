@@ -1,2 +1,2 @@
 flutter build apk
-flutter build apk --build-name=0.0.1--build-number=1
+flutter build apk --build-name=0.0.4--build-number=4

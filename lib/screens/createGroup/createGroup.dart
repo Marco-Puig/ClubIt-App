@@ -25,6 +25,8 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
 
   TextEditingController _groupNameController = TextEditingController();
   TextEditingController _infoController = TextEditingController();
+  TextEditingController _eventController = TextEditingController();
+  TextEditingController _timeController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +83,7 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
               child: Column(
                 children: <Widget>[
                   TextFormField(
-                    controller: _infoController,
+                    controller: _eventController,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.group),
                       hintText: "Event",
@@ -100,7 +102,7 @@ class _OurCreateGroupState extends State<OurCreateGroup> {
               child: Column(
                 children: <Widget>[
                   TextFormField(
-                    controller: _infoController,
+                    controller: _timeController,
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.group),
                       hintText: "Event Due Time",
