@@ -23,8 +23,6 @@ Firestore User/Club Data - (Done)
 
 Chatting System (ClubChats) - (Done)
 
-Explore Clubs - (If qualified for Top 50 or as a post-release feature)
-
 ## Getting Started with Flutter
 
 This project is being made with the Flutter SDK.
